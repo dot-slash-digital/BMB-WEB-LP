@@ -1,0 +1,185 @@
+/* Mobile view */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+
+  #lp-left-column {
+    margin-bottom: 80px;
+  }
+
+  #lp-left-column-container {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  #lp-main-text-container, #lp-sub-text-container {
+    text-align: center;
+  }
+
+  #lp-email-container {
+    width: 100%;
+  }
+
+  #lp-email-container {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  #lp-logo-desktop {
+    display: none;
+  }
+  #logo-mobile {
+    display: block;
+    max-width: 300px;
+  }
+  #logo-mobile-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #lp-sample-image {
+    display: block;
+    max-height: 50vh;
+    margin: 0 auto;
+  }
+}
+
+
+/* Medium view */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  #lp-sample-image {
+    display: block;
+    max-height: 80vh;
+    margin: 0 auto;
+  }
+}
+
+
+/* Desktop view */
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+
+  #lp-left-column-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 900px;
+  }
+
+  #lp-email-container {
+    width: 80%;
+  }
+
+  #lp-content-container {
+    width: 85%;
+  }
+
+  #logo-mobile {
+    display: none;
+  }
+}
+
+
+
+body {
+  background: linear-gradient(0.75turn, #fbab7e, #f7ce68);
+}
+
+
+
+/* LEFT COLUMN */
+
+#lp-content-container {
+  /* Initial visibility set to hidden so container can be centered first. */
+  visibility: hidden;
+}
+
+
+
+/* LOGO */
+
+#lp-logo-desktop {
+  width: 32%;
+  min-width: 100px;
+}
+#logo-mobile {
+  margin: auto;
+  width: 32%;
+  min-width: 100px;
+}
+
+/* TEXT */
+
+#lp-main-text-container {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 4.4rem;
+  width: 100%;
+}
+#lp-sub-text-container {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+
+/* EMAIL SIGN UP */
+
+.lp-email-sign-up {
+  --radius: 5px;
+  --font-size: 18px;
+  padding: 10px;
+}
+#lp-email-input-field {
+  --padding: 20px;
+  border-radius: var(--radius);
+  border-color: darkgrey;
+  font-size: var(--font-size);
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+#lp-email-button {
+  border-radius: var(--radius);
+  font-size: var(--font-size);
+  width: 25%;
+  background-color: #4a65db;
+  color: white;
+  filter: drop-shadow(0px 0px 5px grey);
+  height: 100%;
+}
+
+#lp-email-button:hover {
+  background-color: #3f56ba;
+  filter: drop-shadow(0px 0px 5px #636363);
+}
+
+#lp-email-button:disabled {
+  cursor: not-allowed;
+}
+
+#lp-email-invalid-input-message {
+  visibility: hidden;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+}
+
+
+
+/* RIGHT COLUMN */
+
+#lp-sample-image {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
